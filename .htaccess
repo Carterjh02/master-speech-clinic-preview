@@ -1,0 +1,3 @@
+# Standalone static website. Do not merge with WordPress rewrite rules.
+DirectoryIndex index.html
+Options -Indexes
