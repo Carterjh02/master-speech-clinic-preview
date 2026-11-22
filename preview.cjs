@@ -1,6 +1,8 @@
 /* Local-only preview server. No packages, no installation, no external requests.
    Run: node preview.cjs   (optional port: node preview.cjs 8001)
    Do not upload this file to the production web root. */
+
+   // test to push
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -32,7 +34,7 @@ const server = http.createServer((req, res) => {
 
     if (file !== ROOT && !file.startsWith(ROOT + path.sep)) {
       return fail(404, 'Not found.');
-    }
+    } 
     if (fs.statSync(file).isDirectory()) {
       if (!decoded.endsWith('/')) { res.writeHead(301, { Location: url.pathname + '/' + url.search }); return res.end(); }
       file = path.join(file, 'index.html');

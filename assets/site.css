@@ -526,3 +526,684 @@ p:last-child { margin-bottom: 0; }
   }
 
 }
+
+/* ==========================================================
+   WEBHATCH REFERENCE LAYOUT CORRECTIONS
+   Page-specific overrides
+========================================================== */
+
+
+/* ==========================================================
+   KIYA YAGUDA - BIOGRAPHY
+========================================================== */
+
+.page-kiya-yaguda .detail-page.biography {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  column-gap: 4%;
+  justify-content: start;
+  align-items: center;
+
+  width: 66.666%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+  padding: 140px 0 80px;
+}
+
+.page-kiya-yaguda .detail-photo.portrait {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.page-kiya-yaguda .detail-photo.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 1179 / 1217;
+  object-fit: cover;
+
+  border-radius: 24px;
+}
+
+.page-kiya-yaguda .article-copy {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+}
+
+.page-kiya-yaguda .article-copy h1 {
+  font-size: clamp(30px, 2.15vw, 44px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.page-kiya-yaguda .article-copy p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 0 0 16px;
+}
+
+.page-kiya-yaguda .article-copy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   ISSANA YAGUDA - BIOGRAPHY
+========================================================== */
+
+.page-issana-yaguda .detail-page.biography {
+  display: grid;
+  grid-template-columns: 47.25% 49.25%;
+  column-gap: 3.5%;
+  align-items: center;
+
+  width: 66.666%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.page-issana-yaguda .detail-photo.portrait {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.page-issana-yaguda .detail-photo.portrait img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 24px;
+}
+
+.page-issana-yaguda .article-copy {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+}
+
+.page-issana-yaguda .article-copy h1 {
+  font-size: clamp(30px, 2.15vw, 44px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.page-issana-yaguda .article-copy p {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 0 0 16px;
+}
+
+.page-issana-yaguda .article-copy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   CONTACT US
+========================================================== */
+
+.page-contact-us .contact-page {
+  width: 70%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  padding: 50px 0 125px;
+}
+
+.page-contact-us .contact-page > .page-title {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.page-contact-us .contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 20px;
+  row-gap: 20px;
+
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 70px 55px 35px;
+
+  background: #ffffff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: none;
+
+  box-sizing: border-box;
+}
+
+.page-contact-us .contact-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  min-width: 0;
+  margin: 0;
+}
+
+.page-contact-us .contact-form .field.full {
+  grid-column: 1 / -1;
+}
+
+.page-contact-us .contact-form label {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #111111;
+}
+
+.page-contact-us .contact-form input,
+.page-contact-us .contact-form textarea {
+  display: block;
+
+  width: 100%;
+  min-width: 0;
+
+  padding: 15px 20px;
+
+  background: #ffffff;
+  color: #111111;
+
+  font: inherit;
+  font-size: 15px;
+
+  border: 1px solid #dedede;
+  border-radius: 12px;
+
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.page-contact-us .contact-form input {
+  height: 53px;
+}
+
+.page-contact-us .contact-form textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+
+.page-contact-us .contact-form input::placeholder,
+.page-contact-us .contact-form textarea::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.page-contact-us .contact-form input:focus,
+.page-contact-us .contact-form textarea:focus {
+  border-color: var(--plum);
+  outline: none;
+}
+
+.page-contact-us .form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.page-contact-us .form-actions .button {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  min-height: 50px;
+  padding: 8px 8px 8px 30px;
+
+  background: var(--plum);
+  color: #ffffff;
+
+  border: none;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.page-contact-us .form-actions .button svg {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+
+  background: var(--rose);
+  color: #111111;
+
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.page-contact-us .form-message {
+  grid-column: 1 / -1;
+}
+
+.page-contact-us .form-message[hidden] {
+  display: none;
+}
+
+
+/* ==========================================================
+   INDIVIDUAL SERVICE PAGES - SHARED LAYOUT
+========================================================== */
+
+.page-accent-reduction-coaching .service-detail,
+.page-public-speaking-coaching .service-detail {
+  display: grid;
+
+  grid-template-columns: 41.25% 48.5%;
+  column-gap: 10.25%;
+  align-items: start;
+
+  width: 66.666%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+  padding: 50px 0 95px;
+}
+
+.page-accent-reduction-coaching .service-detail > .page-title,
+.page-public-speaking-coaching .service-detail > .page-title {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  text-align: center;
+
+  margin: 0 0 80px;
+}
+
+.page-accent-reduction-coaching .detail-photo,
+.page-public-speaking-coaching .detail-photo {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  align-self: start;
+}
+
+.page-accent-reduction-coaching .detail-photo img,
+.page-public-speaking-coaching .detail-photo img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 1.375 / 1;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 24px;
+}
+
+.page-accent-reduction-coaching .article-copy,
+.page-public-speaking-coaching .article-copy {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding-top: 12px;
+
+  text-align: left;
+}
+
+.page-accent-reduction-coaching .article-copy p,
+.page-public-speaking-coaching .article-copy p {
+  font-size: 18px;
+  margin: 0 0 18px;
+}
+
+.page-accent-reduction-coaching .article-copy strong {
+  font-weight: 700;
+}
+
+
+/* ==========================================================
+   ACCENT REDUCTION COACHING - TEXT SPACING
+========================================================== */
+
+.page-accent-reduction-coaching .article-copy p,
+.page-accent-reduction-coaching .article-copy li {
+  line-height: 1.75;
+}
+
+.page-accent-reduction-coaching .article-copy ul {
+  list-style: disc;
+
+  padding-left: 28px;
+  margin: 0 0 18px;
+}
+
+.page-accent-reduction-coaching .article-copy li {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+/* ==========================================================
+   PUBLIC SPEAKING COACHING - TEXT SPACING
+========================================================== */
+
+.page-public-speaking-coaching .article-copy p {
+  line-height: 1.3;
+}
+
+
+/* ==========================================================
+   SERVICE PAGE PRICE QUOTE BUTTONS
+========================================================== */
+
+.page-accent-reduction-coaching .article-copy > .button,
+.page-public-speaking-coaching .article-copy > .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  max-width: 100%;
+
+  min-height: 48px;
+  padding: 12px 30px;
+  margin: 8px 0 0;
+
+  background: #fac5c0;
+  color: #000000;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+}
+
+.page-accent-reduction-coaching .article-copy > .button:hover,
+.page-public-speaking-coaching .article-copy > .button:hover {
+  background: #fac5c0;
+  color: #000000;
+  transform: none;
+}
+
+.page-accent-reduction-coaching .session-note,
+.page-public-speaking-coaching .session-note {
+  margin: 22px 0 0;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  text-align: left;
+}
+
+.page-accent-reduction-coaching .session-note p,
+.page-public-speaking-coaching .session-note p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+
+  margin: 0;
+}
+
+
+/* ==========================================================
+   TERMS & CONDITIONS / PRIVACY POLICY
+========================================================== */
+
+.page-terms-conditions .legal-page,
+.page-privacy-policy-2 .legal-page {
+  width: 66.666%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+  padding: 45px 0 65px;
+
+  min-height: auto;
+  text-align: left;
+}
+
+.page-terms-conditions .legal-page > .page-title,
+.page-privacy-policy-2 .legal-page > .page-title {
+  text-align: center;
+  margin: 0 auto 65px;
+}
+
+.page-terms-conditions .legal-copy,
+.page-privacy-policy-2 .legal-copy {
+  width: 100%;
+  max-width: none;
+
+  font-family: var(--body-font);
+  font-size: 13px;
+  line-height: 1.65;
+
+  text-align: left;
+}
+
+.page-terms-conditions .legal-copy h2,
+.page-privacy-policy-2 .legal-copy h2 {
+  font-family: var(--display-font);
+
+  color: var(--plum);
+  font-size: clamp(30px, 2.5vw, 42px);
+  font-weight: 400;
+  line-height: 1.2;
+
+  text-align: left;
+  margin: 0 0 12px;
+}
+
+.page-terms-conditions .legal-copy p,
+.page-privacy-policy-2 .legal-copy p {
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+.page-terms-conditions .legal-copy .legal-label,
+.page-privacy-policy-2 .legal-copy .legal-label {
+  margin-bottom: 16px;
+}
+
+.page-terms-conditions .legal-copy .legal-section,
+.page-privacy-policy-2 .legal-copy .legal-section {
+  margin-top: 16px;
+  padding-left: 8px;
+}
+
+.page-terms-conditions .legal-copy ul {
+  list-style: disc;
+  list-style-position: outside;
+
+  padding-left: 22px;
+  margin: 0 0 16px;
+
+  text-align: left;
+}
+
+.page-terms-conditions .legal-copy ul ul {
+  list-style: circle;
+  padding-left: 22px;
+  margin: 14px 0 0;
+}
+
+.page-terms-conditions .legal-copy li {
+  padding: 0;
+  margin: 0;
+
+  text-align: left;
+}
+
+.page-terms-conditions .legal-copy strong {
+  font-weight: 700;
+}
+
+.page-terms-conditions .legal-copy em {
+  font-style: italic;
+}
+
+
+/* ==========================================================
+   TABLET LAYOUT
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .page-kiya-yaguda .detail-page.biography,
+  .page-issana-yaguda .detail-page.biography,
+  .page-accent-reduction-coaching .service-detail,
+  .page-public-speaking-coaching .service-detail,
+  .page-terms-conditions .legal-page,
+  .page-privacy-policy-2 .legal-page {
+    width: 85%;
+  }
+
+  .page-contact-us .contact-page {
+    width: 88%;
+  }
+
+  .page-kiya-yaguda .article-copy p,
+  .page-issana-yaguda .article-copy p,
+  .page-accent-reduction-coaching .article-copy p,
+  .page-accent-reduction-coaching .article-copy li,
+  .page-public-speaking-coaching .article-copy p {
+    font-size: 16px;
+  }
+
+  .page-kiya-yaguda .detail-page.biography,
+  .page-issana-yaguda .detail-page.biography {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .page-contact-us .contact-form {
+    padding: 40px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE LAYOUT
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .page-kiya-yaguda .detail-page.biography,
+  .page-issana-yaguda .detail-page.biography,
+  .page-accent-reduction-coaching .service-detail,
+  .page-public-speaking-coaching .service-detail {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+
+    width: calc(100% - 40px);
+
+    gap: 30px;
+    padding: 40px 0 50px;
+  }
+
+  .page-kiya-yaguda .detail-photo,
+  .page-issana-yaguda .detail-photo,
+  .page-accent-reduction-coaching .detail-photo,
+  .page-public-speaking-coaching .detail-photo {
+    width: 100%;
+    max-width: 480px;
+
+    margin: 0 auto;
+  }
+
+  .page-kiya-yaguda .article-copy,
+  .page-issana-yaguda .article-copy,
+  .page-accent-reduction-coaching .article-copy,
+  .page-public-speaking-coaching .article-copy {
+    width: 100%;
+    padding: 0;
+  }
+
+  .page-kiya-yaguda .article-copy h1,
+  .page-issana-yaguda .article-copy h1 {
+    font-size: 30px;
+  }
+
+  .page-kiya-yaguda .article-copy p,
+  .page-issana-yaguda .article-copy p,
+  .page-accent-reduction-coaching .article-copy p,
+  .page-accent-reduction-coaching .article-copy li,
+  .page-public-speaking-coaching .article-copy p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .page-accent-reduction-coaching .service-detail > .page-title,
+  .page-public-speaking-coaching .service-detail > .page-title {
+    margin-bottom: 0;
+  }
+
+  .page-contact-us .contact-page {
+    width: calc(100% - 40px);
+    padding: 35px 0 50px;
+  }
+
+  .page-contact-us .contact-form {
+    grid-template-columns: minmax(0, 1fr);
+
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .page-contact-us .contact-form input,
+  .page-contact-us .contact-form textarea {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .page-terms-conditions .legal-page,
+  .page-privacy-policy-2 .legal-page {
+    width: calc(100% - 40px);
+
+    padding: 35px 0 50px;
+  }
+
+  .page-terms-conditions .legal-page > .page-title,
+  .page-privacy-policy-2 .legal-page > .page-title {
+    margin-bottom: 35px;
+  }
+
+  .page-terms-conditions .legal-copy h2,
+  .page-privacy-policy-2 .legal-copy h2 {
+    font-size: 30px;
+  }
+
+  .page-terms-conditions .legal-copy,
+  .page-privacy-policy-2 .legal-copy {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+}
